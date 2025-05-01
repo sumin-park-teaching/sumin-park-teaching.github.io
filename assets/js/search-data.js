@@ -72,7 +72,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-markdown-문법-기초",
+        
+          title: "Markdown 문법 기초",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/markdown/";
+          
+        },
+      },{id: "post-민트초코칩-아이스크림-레시피",
+        
+          title: "민트초코칩 아이스크림 레시피",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/mint-chocolate-chip-ice-cream-recipe/";
+          
+        },
+      },{id: "post-나의-첫-jekyll-블로그-포스트",
+        
+          title: "나의 첫 Jekyll 블로그 포스트",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/my-first-jekyll-blog-post/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
