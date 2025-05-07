@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Sumin Park
     - name: Date of Birth
-      value: 14th March 1879
+      value: 17th February 1985
     - name: Languages
-      value: English, German
+      value: Korean, English
 
 - title: Education
   type: time_table
