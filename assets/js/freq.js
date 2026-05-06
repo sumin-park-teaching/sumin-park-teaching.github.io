@@ -24,5 +24,5 @@ let maxIdx = 0;
 for (let i = 1; i < counts.length; i++) {
     if (counts[i] > counts[maxIdx]) maxIdx = i;
 }
-const top = targets[maxIdx];
-console.log(`가장 자주 나온 글자: '${top}' ${counts[maxIdx]}번`);
+const topTarget = targets[maxIdx];
+console.log(`가장 자주 나온 글자: '${topTarget}' ${counts[maxIdx]}번`);
