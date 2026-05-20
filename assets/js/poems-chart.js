@@ -8,9 +8,9 @@ fetch("/data/poems.csv")
             .map(line => {
                 const cols = line.split(",");
                 return {
-                    year: Numbers(cols[0]),
+                    year: Number(cols[0]),
                     author: cols[1].trim(),
-                    count: Numbers(cols[2])
+                    count: Number(cols[2])
                 };
             });
         drawChart(data);
