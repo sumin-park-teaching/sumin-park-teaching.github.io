@@ -72,7 +72,10 @@ function drawChart(selector, top, color) {
         },
         options: {
             indexAxis: "y",      // <-- 가로 막대 (단어가 잘 보임)
-            scales: { x: { beginAtZero: true } },
+            scales: {
+                x: { beginAtZero: true },
+                y: { ticks: { autoSkip: false } },   // 라벨 15개 모두
+            },
         },
     });
 }
