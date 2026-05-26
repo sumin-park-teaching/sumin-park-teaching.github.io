@@ -12,7 +12,7 @@ function extractBody(text) {
 function getWords(text) {
     return text
         .toLowerCase()
-        .replace(/[.,!?;:'"()\[\]_*]/g, " ")
+        .replace(/[.,!?;:'"‘’“”()\[\]_*]/g, " ")
         .split(/\s+/)
         .filter(w => w.length > 0);
 }
@@ -75,7 +75,7 @@ function drawChart(selector, top, color) {
             maintainAspectRatio: false,      // 부모 <div>의 height에 맞춤
             scales: {
                 x: { beginAtZero: true },
-                y: { ticks: { autoSkip: false } },   // 라벨 모두
+                y: { ticks: { autoSkip: false } },   // 라벨 30개 모두
             },
         },
     });
