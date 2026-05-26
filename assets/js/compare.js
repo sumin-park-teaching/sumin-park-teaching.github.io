@@ -71,7 +71,8 @@ function drawChart(selector, top, color) {
             }],
         },
         options: {
-            indexAxis: "y",      // <-- 가로 막대 (단어가 잘 보임)
+            indexAxis: "y",                  // 가로 막대
+            maintainAspectRatio: false,      // 부모 <div>의 height에 맞춤
             scales: {
                 x: { beginAtZero: true },
                 y: { ticks: { autoSkip: false } },   // 라벨 15개 모두
