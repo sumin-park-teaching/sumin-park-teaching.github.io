@@ -40,7 +40,7 @@ function analyze(text, stopwords) {
     const words   = getWords(body);
     const cleaned = removeStopwords(words, stopwords);
     const counts  = countWords(cleaned);
-    return topN(counts, 15);
+    return topN(counts, 30);
 }
 
 Promise.all([
@@ -75,7 +75,7 @@ function drawChart(selector, top, color) {
             maintainAspectRatio: false,      // 부모 <div>의 height에 맞춤
             scales: {
                 x: { beginAtZero: true },
-                y: { ticks: { autoSkip: false } },   // 라벨 15개 모두
+                y: { ticks: { autoSkip: false } },   // 라벨 모두
             },
         },
     });
